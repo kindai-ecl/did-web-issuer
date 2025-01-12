@@ -9,16 +9,16 @@ interface form {
     faculty: string
 }
 
-const key = '8eb63d435de4d634bc5f3df79c361e9233f55c9c2fca097758eefb018c4c61df';
+const key = '4daafdbbddcda929f054d45db6cbd6f68e78ab7bf5a0b1dceb0574e73caf8fca';
 const signer = ES256KSigner(hexToBytes(key))
 const issuer = {
-    did: 'did:web:skounis.github.io',
+    did: 'did:web:lcyou.github.io',
     signer: signer
 }
 
 export default function signVC(student : form) {
     const vcPayload = {
-        sub: 'did:web:skounis.github.io',
+        sub: 'did:web:lcyou.github.io',
         nbf: Math.round((new Date()).getTime() / 1000),
         vc: {
             '@context': ['https://www.w3.org/2018/credentials/v1'],
