@@ -19,7 +19,6 @@ node.js/yarnの環境構築は済んでいる想定
 yarn add
 ```
 `/data/member.ts`で認証用のデータを保持するようにしています。
-適宜変更するようにしてください。
 また`/lib/signVC.ts`で使用しているDIDは自身のものを使用するなど変更してください。
 
 https://github.com/lCyou/did-web-issuer/blob/d5ed52a72adfa45e33426ebb2c4a2534077491d8/lib/signVC.ts#L12~L16
