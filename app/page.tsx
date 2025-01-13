@@ -216,7 +216,7 @@ export default function StudentAuthForm() {
             <FormField
               control={form.control}
               name="photo"
-              render={({ field: { onChange, value, ...field } }) => (
+              render={({ field: { onChange, ...field } }) => (
                 <FormItem>
                   <FormLabel>Student ID Photo</FormLabel>
                   <FormControl>
@@ -227,7 +227,9 @@ export default function StudentAuthForm() {
                         const file = e.target.files?.[0]
                         if (file) onChange(file)
                       }}
-                      {...field}
+                      name={field.name}
+                      ref={field.ref}
+                      onBlur={field.onBlur}
                     />
                   </FormControl>
                   <FormDescription>Upload a clear photo of your student ID card. Max file size: 5MB.</FormDescription>

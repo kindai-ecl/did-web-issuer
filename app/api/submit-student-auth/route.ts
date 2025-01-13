@@ -1,7 +1,6 @@
 import { NextResponse } from 'next/server'
 import { members } from '@/data/members'
 import signVC from '@/lib/signVC'
-import { signIn } from 'next-auth/react'
 
 export async function POST(request: Request) {
   try {

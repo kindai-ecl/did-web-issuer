@@ -1,5 +1,4 @@
-import NextAuth, { Session } from 'next-auth'
-import { AdapterUser } from 'next-auth/adapters'
+import NextAuth from 'next-auth'
 import CredentialsProvider from 'next-auth/providers/credentials'
 
 declare module 'next-auth' {
