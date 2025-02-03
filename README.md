@@ -25,7 +25,7 @@ yarn add
 https://github.com/lCyou/did-web-issuer/blob/d5ed52a72adfa45e33426ebb2c4a2534077491d8/lib/signVC.ts#L12~L16
 
 ### demo page
-以下ページでデモを公開しています。ユーザーデータは以下を使用するとVCが発行できます。
+以下ページでデモを公開しています。ユーザーデータは以下を使用するとVCが発行できます。<br>
 https://did-web-issuer.vercel.app/
 ```json
 {
