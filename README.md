@@ -23,6 +23,17 @@ yarn add
 また`/lib/signVC.ts`で使用しているDIDは自身のものを使用するなど変更してください。
 
 https://github.com/lCyou/did-web-issuer/blob/d5ed52a72adfa45e33426ebb2c4a2534077491d8/lib/signVC.ts#L12~L16
+OpenID プロバイダーの発行者識別子のように./well-known/did.jsonまたは/did.jsonにconfigを書いておくことでWebサービスが使うが定義できる。
+>[!NOTE]
+> #### github pagesを使用してdidを作成する
+> > GitHub Pages は静的サイト ホスティング サービスです。これを使って、GitHub のリポジトリから HTML、CSS、JavaScript ファイルを直接取得し、任意でビルド プロセスを通じてファイルを実行し、Web サイトを公開することができます。
+> https://docs.github.com/ja/pages/getting-started-with-github-pages/about-github-pages
+> 
+>  ルートの隠しフォルダ`.sample/`は読み込まれないので_config.ymlに以下のような設定を追記してください。
+> ```yaml:_config.yml
+>  include: [".sample"]
+> ```
+
 
 ### demo page
 以下ページでデモを公開しています。ユーザーデータは以下を使用するとVCが発行できます。<br>
